@@ -1,6 +1,6 @@
 # Speedtest App
 
-It is a internet speed test app with amazing UI designed by [Sandhya Subramaniam](https://sandhyasubram.github.io/#/) implemented using React, speedof.me API sdk, three.js.
+It is an internet speed test app with amazing UI designed by [Sandhya Subramaniam](https://sandhyasubram.github.io/#/) implemented using React, speedof.me API sdk, three.js.
 
 [Demo Video](https://streamable.com/e/tziipt) - `https://streamable.com/e/tziipt `
 
