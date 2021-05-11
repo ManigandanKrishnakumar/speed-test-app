@@ -1,0 +1,68 @@
+.stats-container {
+  display: flex;
+  margin-top: 100px;
+  height: 150px;
+}
+
+.dowload-speed-wrapper,
+.upload-speed-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-in;
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+}
+
+.stat-title {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.stat-icon {
+  font-size: 1.5em;
+}
+
+.download-speed-container,
+.upload-speed-container {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-speed-container {
+  transition: all 0.5s ease-in;
+}
+
+.download-speed-container .stat-icon {
+  color: var(--light-blue);
+}
+
+.upload-speed-container .stat-icon {
+  color: var(--pink);
+}
+
+.stat-value {
+  font-size: 2em;
+  margin: 10px 0 10px 10px;
+}
+
+.download-speed-container .stat-value {
+  color: #fff;
+  text-shadow: 0 0 0.125em var(--light-blue);
+}
+
+.upload-speed-container .stat-value {
+  color: #fff;
+  text-shadow: 0 0 0.125em var(--pink);
+}
+
+.stat-unit {
+  font-size: 1em;
+  margin-top: 5px;
+  margin-left: 15px;
+}

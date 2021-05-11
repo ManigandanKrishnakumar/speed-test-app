@@ -1,0 +1,16 @@
+.wave-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave-loader-container svg {
+  margin-left: 10px;
+}
+
+.wave-loader-container path {
+  stroke: #fff;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  fill: none;
+}

@@ -1,10 +1,100 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+* {
+  font-family: "Rubik";
+  margin: 0;
+}
+:root {
+  --border-circle-size: 260px;
+  --background-color-dark: #181830;
+  --background-color-light: #463c64;
+  --font-color: #d1d1d1;
+  --pink: #e53d8b;
+  --light-blue: #249ade;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--background-color-light),
+    var(--background-color-dark),
+    var(--background-color-dark),
+    var(--background-color-dark)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+}
+
+.speed-test-container {
+  width: 960px;
+  padding: 1em;
+}
+
+.canvas-container {
+  margin-top: 50px;
+}
+
+#canvas-wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+
+#canvas-wrapper {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #e53d8b, #2391de);
+}
+
+#canvas-wrapper.download {
+  background: var(--light-blue);
+  animation-name: downloadAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#canvas-wrapper.upload {
+  background: var(--pink);
+  box-shadow: 0px 0px 15px 0px #e53d8b;
+  animation-name: uploadAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes downloadAnimation {
+  from {
+    box-shadow: 0px 0px 15px 0px #2391de;
+  }
+  to {
+    box-shadow: 0px 0px 15px 2.5px #2391de;
+  }
+}
+
+@keyframes uploadAnimation {
+  from {
+    box-shadow: 0px 0px 15px 0px #e53d8b;
+  }
+  to {
+    box-shadow: 0px 0px 15px 2.5px #e53d8b;
+  }
+}
+
+canvas {
+  transform: rotateZ(-45deg);
+  border-radius: 50%;
+  background-color: var(--background-color-dark);
+}
+
+button {
+  position: absolute;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +116,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.three-js-container canvas {
+  background: grey;
 }
 
 @keyframes App-logo-spin {

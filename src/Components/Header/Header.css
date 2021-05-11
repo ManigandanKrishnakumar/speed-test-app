@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.header .app-title {
+  font-size: 2em;
+  margin: 0;
+}
+
+.header .app-icon {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 400px) {
+  .header .app-title {
+    font-size: 1.5rem;
+  }
+}

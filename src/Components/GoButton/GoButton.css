@@ -1,0 +1,14 @@
+.go-button {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in;
+  background-color: var(--background-color-dark);
+}
+
+.button-text {
+  font-size: 1.5em;
+}
